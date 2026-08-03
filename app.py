@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-import pickle
+import joblib
 import pandas as pd
 import warnings
 warnings.filterwarnings("ignore")
@@ -9,8 +9,7 @@ app = Flask(__name__)
 # ---------------------------------------------------------
 # Load model
 # ---------------------------------------------------------
-with open('car_price_random_forest.pkl', 'rb') as f:
-    model = pickle.load(f)
+model = joblib.load("car_price_random_forest.pkl")
 
 # Exact column order the model was trained on
 FEATURE_COLUMNS = list(model.feature_names_in_)
