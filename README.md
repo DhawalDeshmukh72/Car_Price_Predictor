@@ -150,15 +150,12 @@ Hyperparameter tuning was performed using **GridSearchCV** to obtain the best-pe
 
 ## Home Page
 
-> Add this image as `images/home.png`
 
 ![Home](images/home.png)
 
 ---
 
 ## Prediction
-
-> Add this image as `images/prediction.png`
 
 ![Prediction](images/prediction.png)
 
